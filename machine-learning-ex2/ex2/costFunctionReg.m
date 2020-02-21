@@ -19,7 +19,16 @@ grad = zeros(size(theta));
 
 
 
+J  = (1 / m) * sum(-y' * (log(sigmoid(X * theta))) - ((1 - y)' * log(1 - sigmoid(X * theta))));
+%Reg
+size_theta = size(theta);
+J = J + (lambda / 2 / m * sum(theta(2:size_theta(1),1).^2)); 
 
+
+base = (1 / m) *  X' * (sigmoid((X * theta)) - y);
+grad = base + (lambda / m) * theta;
+%Reg
+grad(1) = base(1);
 
 
 % =============================================================
