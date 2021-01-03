@@ -1,4 +1,4 @@
-# Machine Learning by Andrew Ng, Coursera.
+# Machine Learning course by Andrew Ng
 
-This is some exercices done with Octave in this course https://www.coursera.org/learn/machine-learning
+This is some exercices done with Octave for this course https://www.coursera.org/learn/machine-learning
 
